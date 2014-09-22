@@ -6,5 +6,3 @@ Created on Mon Sep 22 22:26:53 2014
 """
 
 print ["Hello world",42]
-
-
