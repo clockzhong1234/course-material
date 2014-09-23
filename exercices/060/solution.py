@@ -6,7 +6,7 @@ Created on Tue Sep 23 17:50:53 2014
 """
 al="abcdefghijklmnopqrstuvwxyz"
 for i in range(25):
-    j = i + 1
+    j = i 
     for j in range(26):
         s=al[i]+al[j]
         print(s)
