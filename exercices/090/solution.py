@@ -7,4 +7,5 @@ Created on Tue Sep 23 18:37:56 2014
 
 import sys
 for i,j in enumerate(sys.argv):
-    print(i,j)
+    print(i),
+    print(j)
