@@ -8,6 +8,7 @@ This is a temporary script file.
 import sys
 if len(sys.argv) < 2:
     print("Please enter two integers and operator for calculation.")
+    exit()
 else:
     a = int(sys.argv[1])
     b = int(sys.argv[3])
