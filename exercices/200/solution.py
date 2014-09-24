@@ -12,7 +12,7 @@ def is_prime(num):
         if num % i == 0:
             j = 1
     if j == 0:
-        print("False")
+        return False
     else:
-        print("True")
+        return True
         
