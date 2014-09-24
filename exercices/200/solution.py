@@ -11,8 +11,9 @@ def is_prime(num):
     j = 1
     n = int(num ** 0.5) + 1
     for i in range(2, n, 1):
-        if num % i != 0:
+        if num % i == 0:
             j = 0
+            exit()
     if j == 0:
         return False
     else:
