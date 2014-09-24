@@ -8,13 +8,14 @@ This is a temporary script file.
 
 def check_my_city(city_name):
     velib = \
-[{  'address': 'RUE DES CHAMPEAUX (PRES DE LA GARE ROUTIERE) - 93170 BAGNOLET',
-        'zip': '93170-',
-        'number': 31705, 'latitude': 48.8645278209514, 'city': 'BAGNOLET',
-        'name': 'CHAMPEAUX (BAGNOLET)-',
-        'longitude': 2.416170724425901
+[{'address': 'RUE DES CHAMPEAUX (PRES DE LA GARE ROUTIERE) - 93170 BAGNOLET',
+  'zip': '93170-',
+  'number': 31705, 'latitude': 48.8645278209514, 'city': 'BAGNOLET',
+  'name': 'CHAMPEAUX (BAGNOLET)-',
+'longitude': 2.416170724425901    
     },
-    {   'address': "52 RUE D'ENGHIEN / ANGLE RUE DU FAUBOURG POISSONIERE - 75010 PARIS",
+    {'address': 
+    "52 RUE D'ENGHIEN / ANGLE RUE DU FAUBOURG POISSONIERE - 75010 PARIS",
         'zip': '75010',
         'number': 10042, 'latitude': 48.87242006305313, 'city': 'PARIS-',
         'name': 'ENGHIEN-',
@@ -27,7 +28,7 @@ def check_my_city(city_name):
         'name': 'METRO ROME-',
         'longitude': 2.319860054774211
     },
-    {   'address': '37 RUE CASANOVA - 75001 PARIS-',
+    {'address': '37 RUE CASANOVA - 75001 PARIS-',
         'zip': '75001-',
         'number': 1022, 'latitude': 48.8682170167744, 'city': 'PARIS-',
         'name': 'RUE DE LA PAIX-',
@@ -43,20 +44,19 @@ def check_my_city(city_name):
         'longitude': 2.412715733388685
     }
 ]
-    t=0
-    l=len(velib)
-    z=[]
+    t = 0
+    l = len(velib)
+    z = []
     for i in range(l):
-        a=dict(velib[i])
+        a = dict(velib[i])
         qcity_name = city_name+"-"
         if a["city"] == qcity_name:
             t = t+1
-            z.append(a["zip"])
-                         
+            z.append(a["zip"])                         
     if t == 0:
         return "Sorry! No station for your city has been found!"
     else:
         return {"stations_nb": t,
                 "zip_code": z,
                 "city": city_name}
-            
+                
