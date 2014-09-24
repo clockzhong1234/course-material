@@ -11,4 +11,3 @@ for i in range(1000):
     if is_prime.is_prime(i) == True:
         s = s + i
 print(s)
-       
