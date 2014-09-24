@@ -9,4 +9,3 @@ if len(sys.argv) < 2:
     print("Please enter a parameter")
 else:
     print(sys.argv[1])
-    
