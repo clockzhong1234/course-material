@@ -6,4 +6,4 @@ Created on Tue Sep 23 00:27:56 2014
 """
 
 for i in range(100):
-    print("Hello World\n")
+    print("Hello World")
