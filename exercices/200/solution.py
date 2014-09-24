@@ -15,4 +15,3 @@ def is_prime(num):
         return False
     else:
         return True
-        
