@@ -8,19 +8,9 @@ Created on Wed Sep 24 16:26:02 2014
 def start_with(input, value):
     m = len(input)
     n = len(value)
-    if m > n :
-        d = m - n
-        back = input[-d:]
-        new_input = value + back
-        if new_input == input:
-            return True
-        else:
-            return False
-    elif m == n:
-        if input == value:
-            return True
-        else:
-            return False
+    d = m - n
+    if (input == value) or ((value + input[-d:]) == input):
+        return True
     else:
         return False
         
