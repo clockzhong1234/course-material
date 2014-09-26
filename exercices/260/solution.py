@@ -23,5 +23,5 @@ def np_euclidean(a, b):
     import numpy as np
     x = np.array(a) 
     y = np.array(b)
-    distnp = numpy.linalg.norm(x-y)
+    distnp = np.linalg.norm(x-y)
     return distnp
