@@ -20,7 +20,6 @@ count = soup.find_all('meta', {'name':'ncbi_resultcount'})[0]
 print(count.attrs)
 print(count['content'])
 
-
 author = soup.find_all('p', { "class" : "desc" })[0]
 author = author.text
 author = author.split()
