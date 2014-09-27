@@ -22,6 +22,6 @@ print(count['content'])
 
 
 author = soup.find_all('p', { "class" : "desc" })[0]
-print(author.attrs)
+print(author.text)
 
 
